@@ -11,6 +11,7 @@ ul li {
 }
 
 a {
+  color: inherit;
   font: inherit;
   text-decoration: none;
 }
@@ -20,6 +21,9 @@ img {
 }
 
 button {
+  width: 210px;
+  padding: 20px 0;
+  transition: 0.4s;
   display: block;
   border: none;
   cursor: pointer;
@@ -63,7 +67,31 @@ body {
 }
 
 .nav-main > li {
+  position: relative;
   margin-right: 50px;
+  font-size: 15px;
+  color: #696871;
+  transition: 0.4s;
+}
+
+.nav-main__item_checked > a,
+.nav-main > li:hover {
+  color: #19191b;
+}
+
+.nav-main__item_checked::after,
+.nav-main > li:hover::after {
+  position: absolute;
+  content: "";
+  bottom: -10px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #5454d4;
+}
+
+.nav-main__item_checked > a {
+  cursor: default;
 }
 
 .nav-main > li:last-child {
@@ -71,12 +99,99 @@ body {
 }
 
 .header__btn {
-  width: 210px;
-  padding: 20px 0;
   background-color: #ff7143;
-  transition: 0.4s;
 }
 
 .header__btn:hover {
   background-color: #ee5423;
+}
+
+/*Home*/
+#home-section {
+  padding-bottom: 160px;
+}
+
+.home {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.home-right {
+  position: relative;
+  overflow-x: hidden;
+  width: 580px;
+  height: 644px;
+}
+
+.home-left {
+  width: 460px;
+}
+
+.home-left > p {
+  font-size: 20px;
+  font-family: "Mulish", Arial, sans-serif;
+  font-weight: 400;
+  line-height: 30px;
+  margin-bottom: 50px;
+}
+
+.home-left > b {
+  font-size: 80px;
+  width: 50%;
+  color: #19191b;
+  line-height: 77px;
+  margin-bottom: 30px;
+  display: block;
+  font-family: "DT Sans", Arial, sans-serif;
+  font-weight: 700;
+}
+
+.home-right > img {
+  position: absolute;
+  left: 60px;
+}
+
+.partners > ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.home-nav > button {
+  margin-right: 40px;
+  width: 210px;
+  background-color: #5454d4;
+}
+
+.home-nav > button:hover {
+  background-color: #2828e8;
+}
+
+.home-nav {
+  display: flex;
+}
+
+.home-nav > a {
+  display: block;
+  border: 1px solid #e7e7e7;
+  background: #ffffff;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  position: relative;
+}
+
+.home-nav > a:hover {
+  box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.3);
+}
+
+.home-nav > a::after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 50%;
+  width: 22px;
+  height: 24px;
+  background: url("../img/arrow-down.svg") no-repeat;
+  transform: translate(-50%, -50%);
 }
