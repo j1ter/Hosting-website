@@ -195,3 +195,56 @@ body {
   background: url("../img/arrow-down.svg") no-repeat;
   transform: translate(-50%, -50%);
 }
+
+/*Subscription*/
+
+#subscription-section {
+  padding-bottom: 85px;
+}
+
+.subscription,
+.metrics {
+  display: flex;
+  justify-content: space-between;
+}
+
+.subscription-left,
+.metrics-right {
+  width: 350px;
+}
+
+.subscription-right,
+.metrics-left {
+  width: 550px;
+  padding-top: 95px;
+}
+
+.section-header {
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #19191b;
+}
+
+.section-text {
+  font-family: "Mulish", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 30px;
+  width: 460px;
+}
+
+.section-link {
+  font-size: 17px;
+  color: #5454d4;
+  transition: 0.4s;
+}
+
+.section-link:hover {
+  color: #2828e8;
+}
+
+#metrics-section {
+  padding-bottom: 140px;
+}
