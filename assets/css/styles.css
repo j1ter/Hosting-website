@@ -248,3 +248,34 @@ body {
 #metrics-section {
   padding-bottom: 140px;
 }
+
+.audit-wrap {
+  display: flex;
+  margin-top: 150px;
+  justify-content: space-between;
+}
+
+.audit > img {
+  display: block;
+  margin: 0 auto 20px;
+  width: 150px;
+}
+
+.audit > h3 {
+  font-weight: 700;
+  font-size: 24px;
+  color: #19191b;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.audit > p {
+  font-family: "Mulish", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.audit {
+  width: 315px;
+}
